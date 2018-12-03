@@ -23,7 +23,7 @@ def get_dates(frequency):
         raise ValueError('Invalid frequency')
 
 def run(file):
-    print('Simulating...')
+    print('Working...')
     with open(file, 'r') as f:
         budget = yaml.load(f)
     calendar = pd.DataFrame(index=pd.date_range(start=start, end=end))
